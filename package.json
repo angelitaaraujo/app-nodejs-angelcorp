@@ -1,0 +1,13 @@
+{
+  "name": "app-nodejs-angelcorp",
+  "version": "1.0.0",
+  "description": "App para CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building...' && mkdir -p dist && echo 'Build complete' > dist/build.log",
+    "test": "echo 'Running tests...' && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
