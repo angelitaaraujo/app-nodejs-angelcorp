@@ -42,7 +42,7 @@ pipeline {
       }
     }
     
-    stage('Análise de Costage('Análise de Cobertura') {
+    stage('Análise de Cobertura') {
       steps {
         echo '========== ESTÁGIO: Análise de Cobertura =========='
         echo 'Relatório de cobertura será gerado em coverage/index.html'
