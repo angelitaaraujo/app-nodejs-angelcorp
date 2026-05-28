@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo 'Building...' && mkdir -p dist && echo 'Build complete' > dist/build.log",
-    "test": "jest --coverage --coverageReporters=html --coverageReporters=json",
+    "test": "jest --coverage --coverageReporters=html --coverageReporters=json"
   },
   "devDependencies": {
     "jest": "^29.0.0"
