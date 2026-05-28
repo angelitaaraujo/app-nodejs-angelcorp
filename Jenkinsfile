@@ -47,7 +47,7 @@ pipeline {
         echo '========== ESTÁGIO: Análise de Cobertura =========='
         echo 'Relatório de cobertura será gerado em coverage/index.html'
         sh 'ls -la coverage/ || echo "Diretório coverage não encontrado"'
-     }
+      }
     }
 
     stage('Build') {
