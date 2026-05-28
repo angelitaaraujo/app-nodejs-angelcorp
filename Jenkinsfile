@@ -37,7 +37,7 @@ pipeline {
       steps {
         echo '========== ESTÁGIO: Test =========='
         echo 'Executando testes com Jest...'
-        sh 'npm test -- --coverage --coverageReporters=html --coverageReporters=json'
+        sh 'npm test'
         echo 'Testes executados com sucesso!'
       }
     }
