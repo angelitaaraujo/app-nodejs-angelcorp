@@ -32,7 +32,6 @@ function countUsersByRole(users, role) {
   return filterUsersByRole(users, role).length;
 }
 
-//Adicionando uma linha para testar pipeline
 module.exports = { 
   getUserById, 
   filterUsersByRole, 

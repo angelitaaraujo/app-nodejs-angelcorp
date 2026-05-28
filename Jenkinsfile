@@ -37,7 +37,7 @@ pipeline {
       steps {
         echo '========== ESTÁGIO: Test =========='
         echo 'Executando testes com Jest...'
-        sh 'npm test'
+        sh 'npm test -- --coverage --coverageReporters=html --coverageReporters=json'
         echo 'Testes executados com sucesso!'
       }
     }
@@ -49,7 +49,7 @@ pipeline {
         sh 'ls -la coverage/ || echo "Diretório coverage não encontrado"'
       }
     }
-
+    
     stage('Build') {
       steps {
         echo '========== ESTÁGIO: Build =========='
@@ -82,7 +82,7 @@ pipeline {
     always {
       echo '========== PÓS-EXECUÇÃO =========='
       echo 'Limpando workspace...'
-      cleanWs()
+//      cleanWs()
     }
     
     success {
